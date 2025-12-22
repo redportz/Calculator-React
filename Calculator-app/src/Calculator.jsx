@@ -96,7 +96,7 @@ function Calculator() {
             setJustEvaluated(false);
 
             const trimmed = prev.trim();
-            const last = trimmed.splice(-1);
+            const last = trimmed.slice(-1);
 
             if (isOperator(last)) {
                 return trimmed.splice(0,-1) +key;

@@ -110,6 +110,7 @@ function Calculator() {
   return (
     <div className="Calculator-container">
       <Display value={display} />
+      {/* add "toggle for rgb" -noob */}
       <Keypad onKeyPress={handleKeyPress} />
     </div>
   );
